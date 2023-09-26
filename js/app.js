@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (e.key === "ArrowRight") {
       moveRight();
     } else if (e.key === "ArrowUp") {
-      // moveStraight
+      moveStraight();
     }
   }
 
@@ -148,6 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
     isGoingRight = false;
     isGoingLeft = false;
     clearInterval(rightTimerId);
+    clearInterval(leftTimerId);
   }
 
   function start() {
